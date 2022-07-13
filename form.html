@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="useremail" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="userpassword" name="password"><br>
+        <label for=" fname ">First name:<br>
+         <input type="text" id="firstName " name="fname"><br>
+        <label for=" lname ">Last name:</label><br>
+        <input type="text " id="lastName " name="lname"><br>
+        <label for="date"> date:</label>
+        <input type="date" name="date" id="date1"><br>
+        <label for="phone">Telephone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+        <label for="plans">Plans:</label>
+
+        <br> <select name="plans" id="plans">
+        <option value="free plan">free plan</option>
+        <option value="swimming">go swimming price $40</option>
+        <option value="surfing">go surfing price $100</option>
+        <option value="skydiving">go skydiving price $400</option><br><br>
+
+        <input type="checkbox" name="checkbox" id =pro_plan>
+        <label for="checkbox">Pro plan</label><br>
+        </select>
+        <label for="Card Number">Credit Card Number</label><br>
+        <input type="text" name="cardnumber" id="credit_card" placeholder=" Credit Card Number "><br>
+        <label for="expiraition">Expiration Date</label><br>
+        <input type="date" name=" experationdate" placeholder=" exp. Date"><br>
+        <label for="cvcnumber ">CVC</label>
+        <br>
+        <input type="text " name="cvcnumber " id="cvc_num" placeholder="cvc "> <br>
+
+        <label for="Billing_address">Billing Address</label>
+        <fieldset>
+            <legend>Billing Address</legend>
+            <input type="text" name="first-name" id="billing-fname" required>
+            <label for="first-name">First Name</label><br>
+            <input type="text" name="last-name" id="billing-lname" required>
+            <label for="last-name">Last Name</label><br>
+            <input type="text" name="street-address" id="street-address" required>
+            <label for="street-address">Street Address</label><br>
+
+
+            <input type="text" name="apt-address" id="apt-address">
+            <label for="apt-address">Apt/Suite</label><br>
+
+            <input type="text" name="city" id="city" required>
+            <label for="city">City</label><br>
+            <input type="text" name="postal-code" id="postal-code" required>
+            <label for="postal-code">Zip/Postal Code</label><br> <input type="text" id="billing-country" list="country-list" name="countries" required>
+            <datalist id="country-list">
+              <option value="Afghanistan - AF">
+              <option value="Albania - AL">
+              <option value="Algeria - DZ">
+             <option value="Belize - BZ">
+              <option value="Benin - BJ">
+              <option value="Bermuda - BM">
+        </datalist>
+            <label for="countries">Countries</label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
